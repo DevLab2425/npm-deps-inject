@@ -4,13 +4,13 @@ Inject npm dependencies into a given HTML file. (Inspired by the popular Bower c
 ## Overview
 Bower is an extremely popular dependency management tool, specifically for front-end web application development. However, recently there has been a shift to use module bundlers like Webpack and Browserify. These tools focus primarily on npm modules, which are independent from Bower components. Thus, the use of Bower with projects that use ES6/ES2105 modules is becoming less and less popular. 
 
-This project is aimed at projects who have decided to utilize npm to manage their front-end dependencies, but may not have implemented a module bundler. When used as part of a build process, `inject-deps` will parse the `package.json` to retrieve the project depenedencies. These dependencies are then injected into the provided HTML file(s). 
+This project is aimed at projects who have decided to utilize npm to manage their front-end dependencies, but may not have implemented a module bundler. When used as part of a build process, `npm-inject-deps` will parse the `package.json` to retrieve the project depenedencies. These dependencies are then injected into the provided HTML file(s). 
 
 ## (potential) Usage
 
 ### (expected) Installation
 ```bash
-$ npm install --save-dev inject-deps
+$ npm install --save-dev npm-inject-deps
 ```
 
 ### (conceptual) Command Line
@@ -21,7 +21,7 @@ $ injectdeps ./src/index.html [options]
 
 ### (hypothetical) Gulp Stream
 ```bash
-const inject = require('inject-deps')
+const inject = require('npm-inject-deps')
 gulp.task('build', function () {
   gulp.src('./src/index.html')
     .pipe(inject())
@@ -37,7 +37,7 @@ gulp.task('build', function () {
 #### CLI
 // TODO
 
-#### .injectdeprc
+#### .injectdepsrc
 // TODO
 
 #### package.json
