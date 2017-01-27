@@ -24,7 +24,8 @@ $ injectdeps ./src/index.html [options]
 const inject = require('inject-deps')
 gulp.task('build', function () {
   gulp.src('./src/index.html')
-    .pipe(inject());
+    .pipe(inject())
+    .pipe(gulp.dest('/dest');
 });
 ```
 
