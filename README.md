@@ -1,4 +1,4 @@
-# inject-deps
+# npm-deps-inject
 Inject npm dependencies into a given HTML file. (Inspired by the popular Bower companion [`wiredep`](https://www.npmjs.com/package/wiredep))
 
 ## Overview
